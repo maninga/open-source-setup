@@ -1,0 +1,20 @@
+{
+  "name": "open-source-setup",
+  "version": "0.0.0-development",
+  "description": "An example repository showing how @patrickleet sets up his open-source npm modules.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release"
+  },
+  "keywords": [],
+  "author": "David KEITA <maninga@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maninga/open-source-setup.git"
+  },
+  "devDependencies": {
+    "semantic-release": "^15.13.24"
+  }
+}
