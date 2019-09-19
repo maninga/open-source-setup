@@ -5,6 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "commit": "git-cz",
+    "lint": "eslint src __tests__",
+    "lint:fix": "eslint --fix src __tests__",
     "semantic-release": "semantic-release",
     "test": "jest --config jest.json --coverage"
   },
@@ -18,6 +20,12 @@
   "devDependencies": {
     "commitizen": "^4.0.3",
     "cz-conventional-changelog": "^3.0.2",
+    "eslint": "^6.4.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
     "jest": "^24.9.0",
     "semantic-release": "^15.13.24"
   },
