@@ -22,10 +22,17 @@ script:
 
 after_script: greenkeeper-lockfile-upload
 
-after_success:
-  - npx semantic-release
-  if: branch = master
-  name: "Releasing"             # names the releasing stage job
+jobs:
+  include:
+    - stage: semantic release
+      if: branch = master
+      node_js: node
+      script: echo "Running semantic release to tag and deploy to npm ..."
+      deploy:
+        provider: script
+        skip_cleanup: true
+        script:
+          - npx semantic-release
 
 branches:
   except:
