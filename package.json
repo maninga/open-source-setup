@@ -1,5 +1,5 @@
 {
-  "name": "open-source-setup",
+  "name": "open-source-setup-maninga",
   "version": "0.0.0-development",
   "description": "An example repository showing how @patrickleet sets up his open-source npm modules.",
   "main": "src/index.js",
