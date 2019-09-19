@@ -2,11 +2,11 @@
   "name": "open-source-setup",
   "version": "0.0.0-development",
   "description": "An example repository showing how @patrickleet sets up his open-source npm modules.",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "commit": "git-cz",
     "semantic-release": "semantic-release",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --config jest.json --coverage"
   },
   "keywords": [],
   "author": "David KEITA <maninga@gmail.com>",
@@ -18,6 +18,7 @@
   "devDependencies": {
     "commitizen": "^4.0.3",
     "cz-conventional-changelog": "^3.0.2",
+    "jest": "^24.9.0",
     "semantic-release": "^15.13.24"
   },
   "config": {
